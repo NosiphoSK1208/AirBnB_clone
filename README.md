@@ -1,7 +1,7 @@
 # AirBnB Clone - The Console
 
   
-![HolBnB clone](https://github.com/monoprosito/AirBnB_clone/blob/feature/console/hBnB.png?raw=true)
+![AIRBnB clone](https://raw.githubusercontent.com/Kwenziwa/AirBnB_clone/master/AXL_AIRBNB_LOGO.png)
 Welcome to the AirBnB clone project!
 
   
