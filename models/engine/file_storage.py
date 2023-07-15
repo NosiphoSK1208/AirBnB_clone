@@ -16,7 +16,7 @@ class FileStorage:
         __file_direction (str):  obj_file to save objects to.
         __objs (dict): A dic of instantiated objects.
     """
-    __file_direction = "obj_file.json"
+    __file_direction = "file.json"
     __objs = {}
 
     def all(self):

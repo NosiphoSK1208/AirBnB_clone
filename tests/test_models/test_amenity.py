@@ -93,17 +93,17 @@ class TestAmenity_save(unittest.TestCase):
     @classmethod
     def setUp(self):
         try:
-            os.rename("obj_file.json", "tmp")
+            os.rename("file.json", "tmp")
         except IOError:
             pass
 
     def tearDown(self):
         try:
-            os.remove("obj_file.json")
+            os.remove("file.json")
         except IOError:
             pass
         try:
-            os.rename("tmp", "obj_file.json")
+            os.rename("tmp", "file.json")
         except IOError:
             pass
 
@@ -134,7 +134,7 @@ class TestAmenity_save(unittest.TestCase):
         amt_model = Amenity()
         amt_model.save()
         amid = "Amenity." + amt_model.id
-        with open("obj_file.json", "r") as f:
+        with open("file.json", "r") as f:
             self.assertIn(amid, f.read())
 
 

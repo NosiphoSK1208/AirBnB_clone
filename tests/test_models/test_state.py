@@ -93,17 +93,17 @@ class TestState_save(unittest.TestCase):
     @classmethod
     def setUp(self):
         try:
-            os.rename("obj_file.json", "tmp")
+            os.rename("file.json", "tmp")
         except IOError:
             pass
 
     def tearDown(self):
         try:
-            os.remove("obj_file.json")
+            os.remove("file.json")
         except IOError:
             pass
         try:
-            os.rename("tmp", "obj_file.json")
+            os.rename("tmp", "file.json")
         except IOError:
             pass
 
@@ -134,7 +134,7 @@ class TestState_save(unittest.TestCase):
         stateModel = State()
         stateModel.save()
         state_id = "State." + stateModel.id
-        with open("obj_file.json", "r") as f:
+        with open("file.json", "r") as f:
             self.assertIn(state_id, f.read())
 
 
